@@ -31,7 +31,9 @@ public class CalcolaBiglietto {
 			newPrice = price;
 		}
 		
-		System.out.println("Il prezzo del tuo biglietto è di:" + newPrice + "€");
+		String formattedPrice = String.format("%.2f", newPrice);
+		
+		System.out.println("Il prezzo del tuo biglietto è di:" + formattedPrice + "€");
 	}
 
 }
